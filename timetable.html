@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Timetable</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weekly Timetable</h1>
+        <div class="timetable">
+            <div class="header">
+                <div class="day-header">Time</div> 
+                <div class="day-header">Monday</div>
+                <div class="day-header">Tuesday</div>
+                <div class="day-header">Wednesday</div>
+                <div class="day-header">Thursday</div>
+                <div class="day-header">Friday</div>
+                <div class="day-header">Saturday</div>
+                <div class="day-header">Sunday</div>
+            </div>
+            <!-- Time slots from 7 AM to 11 PM -->
+            <div class="time-row">
+                <div class="time-label">7 AM - 9 AM</div>
+                <div class="slot" data-day="Monday"></div>
+                <div class="slot" data-day="Tuesday"></div>
+                <div class="slot" data-day="Wednesday"></div>
+                <div class="slot" data-day="Thursday"></div>
+                <div class="slot" data-day="Friday"></div>
+                <div class="slot" data-day="Saturday"></div>
+                <div class="slot" data-day="Sunday"></div>
+            </div>
+            <div class="time-row">
+                <div class="time-label">9 AM - 11 AM</div>
+                <div class="slot" data-day="Monday"></div>
+                <div class="slot" data-day="Tuesday"></div>
+                <div class="slot" data-day="Wednesday"></div>
+                <div class="slot" data-day="Thursday"></div>
+                <div class="slot" data-day="Friday"></div>
+                <div class="slot" data-day="Saturday"></div>
+                <div class="slot" data-day="Sunday"></div>
+            </div>
+            
+
+            <div class="time-row">
+                <div class="time-label">11 AM - 1 PM</div>
+                <div class="slot" data-day="Monday"></div>
+                <div class="slot" data-day="Tuesday"></div>
+                <div class="slot" data-day="Wednesday"></div>
+                <div class="slot" data-day="Thursday"></div>
+                <div class="slot" data-day="Friday"></div>
+                <div class="slot" data-day="Saturday"></div>
+                <div class="slot" data-day="Sunday"></div>
+            </div>
+
+            <div class="time-row">
+                <div class="time-label">1 PM - 3 PM</div>
+                <div class="slot" data-day="Monday"></div>
+                <div class="slot" data-day="Tuesday"></div>
+                <div class="slot" data-day="Wednesday"></div>
+                <div class="slot" data-day="Thursday"></div>
+                <div class="slot" data-day="Friday"></div>
+                <div class="slot" data-day="Saturday"></div>
+                <div class="slot" data-day="Sunday"></div>
+            </div>
+
+
+            <div class="time-row">
+                <div class="time-label">3 PM - 5 PM</div>
+                <div class="slot" data-day="Monday"></div>
+                <div class="slot" data-day="Tuesday"></div>
+                <div class="slot" data-day="Wednesday"></div>
+                <div class="slot" data-day="Thursday"></div>
+                <div class="slot" data-day="Friday"></div>
+                <div class="slot" data-day="Saturday"></div>
+                <div class="slot" data-day="Sunday"></div>
+            </div>
+
+            <div class="time-row">
+                <div class="time-label">5 PM - 7 PM</div>
+                <div class="slot" data-day="Monday"></div>
+                <div class="slot" data-day="Tuesday"></div>
+                <div class="slot" data-day="Wednesday"></div>
+                <div class="slot" data-day="Thursday"></div>
+                <div class="slot" data-day="Friday"></div>
+                <div class="slot" data-day="Saturday"></div>
+                <div class="slot" data-day="Sunday"></div>
+            </div>
+
+            <div class="time-row">
+                <div class="time-label">7 PM - 9 PM</div>
+                <div class="slot" data-day="Monday"></div>
+                <div class="slot" data-day="Tuesday"></div>
+                <div class="slot" data-day="Wednesday"></div>
+                <div class="slot" data-day="Thursday"></div>
+                <div class="slot" data-day="Friday"></div>
+                <div class="slot" data-day="Saturday"></div>
+                <div class="slot" data-day="Sunday"></div>
+            </div>
+
+            <div class="time-row">
+                <div class="time-label">9 PM - 11 PM</div>
+                <div class="slot" data-day="Monday"></div>
+                <div class="slot" data-day="Tuesday"></div>
+                <div class="slot" data-day="Wednesday"></div>
+                <div class="slot" data-day="Thursday"></div>
+                <div class="slot" data-day="Friday"></div>
+                <div class="slot" data-day="Saturday"></div>
+                <div class="slot" data-day="Sunday"></div>
+            </div>
+
+
+            <!-- Pre-set sleeping time -->
+            <div class="time-row">
+                <div class="time-label">11 PM - 7 AM</div>
+                <div class="slot sleeping">Sleeping</div>
+                <div class="slot sleeping">Sleeping</div>
+                <div class="slot sleeping">Sleeping</div>
+                <div class="slot sleeping">Sleeping</div>
+                <div class="slot sleeping">Sleeping</div>
+                <div class="slot sleeping">Sleeping</div>
+                <div class="slot sleeping">Sleeping</div>
+            </div>
+        </div>
+        <button id="downloadBtn" class="download-button">Download Timetable as PDF</button>
+    </div>
+
+    <!-- Include jsPDF and html2canvas for PDF generation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
